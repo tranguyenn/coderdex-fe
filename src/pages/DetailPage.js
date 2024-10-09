@@ -193,7 +193,7 @@ const calculateWeaknesses = (types) => {
 		steel: 0,
 		fairy: 0,
 	};
-
+	console.log(weaknesses);
 	types.forEach((type) => {
 		weaknesses[type].weak.forEach((t) => total[t]++);
 		weaknesses[type].resistant.forEach((t) => total[t]--);
